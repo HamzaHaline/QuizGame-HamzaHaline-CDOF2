@@ -4,7 +4,7 @@
 ## Description
 Welcome to the Quiz Game! This is a simple console-based quiz game coded in python. Here players can answer a series of questions to test their knowledge in various subjects.The game consists of a series of questions, and the player has to choose the correct answer from the given options. The player's score is displayed at the end of the game.
 
-## How to Run the Project
+                     ## How to Run the Project
 1) Clone the repository to your local machine:
    ```bash
     git clone https://github.com/your-username/quiz-game.git
@@ -16,13 +16,13 @@ Welcome to the Quiz Game! This is a simple console-based quiz game coded in pyth
     ```
 
 To make this project you need to follow this step:
-## 4) Installation
+3) Installation
 Install package with pip
 ```bash
   pip install time
 ```
 
-## 3) Deployment
+4) Deployment
 To deploy this project run this code or the code in quiz.py
 ```bash
     import time
@@ -88,7 +88,7 @@ To deploy this project run this code or the code in quiz.py
 
 ```
 
-## How to Contribute
+                          ## How to Contribute
 We welcome contributions to improve the quiz game! If you'd like to contribute, follow these steps:
 
 1. Fork the repository.
@@ -120,3 +120,11 @@ We welcome contributions to improve the quiz game! If you'd like to contribute, 
 Feel free to download, use, and modify the code to suit your needs. Happy coding!
 
 
+## Authors
+Hamza HALINE - Initial work and maintenance
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Acknowledgments
+Special thanks to Mr.Gwénolé MARTIN for his help building this project
