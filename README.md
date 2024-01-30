@@ -2,64 +2,27 @@
 
 
 ## Description
-Welcome to the Quiz Game! This is a simple console-based quiz game coded in pygtho  here players can answer a series of questions to test their knowledge in various subjects.The Quiz Game has a user-friendly interface, which makes it easy to play. The game consists of a series of questions, and the player has to choose the correct answer from the given options. The player's score is displayed at the end of the game.
+Welcome to the Quiz Game! This is a simple console-based quiz game coded in python. Here players can answer a series of questions to test their knowledge in various subjects.The game consists of a series of questions, and the player has to choose the correct answer from the given options. The player's score is displayed at the end of the game.
 
 ## How to Run the Project
 1) Clone the repository to your local machine:
-    bash
+   ```bash
     git clone https://github.com/your-username/quiz-game.git
     ```
 
 2) Navigate to the project directory:
     ```bash
-    cd quiz-game
+    cd QuizGame-HamzaHaline-CDOF2
     ```
-
-3. Run the quiz game:
-    ```bash
-    python quiz_game.py
-    ```
-
-## How to Contribute
-We welcome contributions to improve the quiz game! If you'd like to contribute, follow these steps:
-
-1. Fork the repository.
-
-2. Clone your fork to your local machine:
-    ```bash
-    git clone https://github.com/HamzaHaline/QuizGame-HamzaHaline-CDOF2
-    ```
-
-3. Create a new branch for your feature or bug fix:
-    ```bash
-    git checkout -b feature-name
-    ```
-
-4. Make your changes and commit them:
-    ```bash
-    git add .
-    git commit -m "Description of your changes"
-    ```
-
-5. Push the changes to your fork:
-    ```bash
-    git push origin feature-name
-    ```
-
-6. Create a pull request on GitHub.
-
-
-Feel free to download, use, and modify the code to suit your needs. Happy coding!
-
 
 To make this project you need to follow this step:
-## Installation
+## 4) Installation
 Install package with pip
 ```bash
   pip install time
 ```
 
-## Deployment
+## 3) Deployment
 To deploy this project run this code or the code in quiz.py
 ```bash
     import time
@@ -124,3 +87,36 @@ To deploy this project run this code or the code in quiz.py
         jouer_quiz()
 
 ```
+
+## How to Contribute
+We welcome contributions to improve the quiz game! If you'd like to contribute, follow these steps:
+
+1. Fork the repository.
+
+2. Clone your fork to your local machine:
+    ```bash
+    git clone https://github.com/HamzaHaline/QuizGame-HamzaHaline-CDOF2
+    ```
+
+3. Create a new branch for your feature or bug fix:
+    ```bash
+    git checkout -b feature-name
+    ```
+
+4. Make your changes and commit them:
+    ```bash
+    git add .
+    git commit -m "Description of your changes"
+    ```
+
+5. Push the changes to your fork:
+    ```bash
+    git push origin feature-name
+    ```
+
+6. Create a pull request on GitHub.
+
+
+Feel free to download, use, and modify the code to suit your needs. Happy coding!
+
+
