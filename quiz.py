@@ -12,7 +12,7 @@ def pose_question(question, options, reponse_correcte):
     for i, option in enumerate(options, start=1):
         print(f"{i}. {option}")
 
-    reponse = input("Votre réponse : ").lower()
+    reponse = input("Your answer: ").lower().strip()
 
     if reponse == reponse_correcte:
         print("Correct !")
