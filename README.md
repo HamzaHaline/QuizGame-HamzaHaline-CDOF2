@@ -27,64 +27,75 @@ To deploy this project run this code or the code in quiz.py
 ```bash
     import time
 
-    def sleep_time():
-        print("Chargement de votre questionnaire", end="")
-        for _ in range(100):
-            print(".", end="")
-            time.sleep(0.05)
-        print(" ")
+def sleep_time():
+    # Display a loading message while simulating a delay
+    print("Chargement de votre questionnaire", end="")
+    for _ in range(100):
+        print(".", end="")
+        time.sleep(0.05)
+    print(" ")
 
-    def pose_question(question, options, reponse_correcte):
-        print(question)
-        for i, option in enumerate(options, start=1):
-            print(f"{i}. {option}")
+def pose_question(question, options, reponse_correcte):
+    # Display the question and its options
+    print(question)
+    for i, option in enumerate(options, start=1):
+        print(f"{i}. {option}")
 
-        reponse = input("Votre réponse : ").lower()
+    # Get the user's response and convert it to lowercase
+    reponse = input("Votre réponse : ").lower()
 
-        if reponse == reponse_correcte:
-            print("Correct !")
-            return 1
-        else:
-            print(f"Erreur. La réponse correcte était : {reponse_correcte}")
-            return 0
+    if reponse == reponse_correcte:
+        # Inform the user if the answer is correct
+        print("Correct !")
+        return 1
+    else:
+        # Inform the user if the answer is incorrect and display the correct answer
+        print(f"Erreur. La réponse correcte était : {reponse_correcte}")
+        return 0
 
-    def jouer_quiz():
-        score = 0
+def jouer_quiz():
+    score = 0
 
-        print("Bienvenue au Quiz!")
+    # Welcome the player
+    print("Bienvenue au Quiz!")
 
-        nom = input("Entrez votre nom : ")
-        print(f"\nBonjour {nom}!\n")
+    # Get the player's name
+    nom = input("Entrez votre nom : ")
+    print(f"\nBonjour {nom}!\n")
 
-        sleep_time()
+    # Simulate a loading time
+    sleep_time()
 
-        print("D'accord, commençons le quiz!\n")
+    # Start the quiz
+    print("D'accord, commençons le quiz!\n")
 
-        # Pose de questions
-        score += pose_question(
-            "Quel est la capitale de la France?",
-            ["Paris", "Londres", "Berlin", "Madrid"],
-            "paris"
-        )
+    # Pose questions and update the score
+    score += pose_question(
+        "Quel est la capitale de la France?",
+        ["Paris", "Londres", "Berlin", "Madrid"],
+        "paris"
+    )
 
-        score += pose_question(
-            "Combien de continents y a-t-il sur Terre?",
-            ["5", "6", "7", "8"],
-            "7"
-        )
+    score += pose_question(
+        "Combien de continents y a-t-il sur Terre?",
+        ["5", "6", "7", "8"],
+        "7"
+    )
 
-        score += pose_question(
-            "Quelle est la couleur du ciel par une journée claire?",
-            ["Bleu", "Vert", "Rouge", "Jaune"],
-            "bleu"
-        )
+    score += pose_question(
+        "Quelle est la couleur du ciel par une journée claire?",
+        ["Bleu", "Vert", "Rouge", "Jaune"],
+        "bleu"
+    )
 
-        # Afficher le score final
-        print(f"\nMerci d'avoir joué, {nom}!")
-        print(f"Votre score final est de {score} sur 3.")
+    # Display the final score
+    print(f"\nMerci d'avoir joué, {nom}!")
+    print(f"Votre score final est de {score} sur 3.")
 
-    if __name__ == "__main__":
-        jouer_quiz()
+if __name__ == "__main__":
+    # Run the quiz when the script is executed
+    jouer_quiz()
+
 
 ```
 
